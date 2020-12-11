@@ -6,7 +6,7 @@ Four commands are provided to manage the project on the server.
 - Python3, pip
 ### Libraries of Python
 - paramiko (to manage SSH by python)
-- docker (might be needed)
+- docker (might be needed in the future)
 - python-click
 
 ## Build and Run the CLI
@@ -52,9 +52,3 @@ Directory on the server only includes 2 to 3 bits of hexadecimals, like 160
 ```bash
 scienterprise check-workunit --workunit {workunit}
 ```
-
-## Future Plan
-**Server Password**
-The password of the server is now saved in `user-server.json`. The next step is to use public key to connect and manage the projects on the server instead of using passwords.
-**Workunit Saving**
-Workunits of tasks need to be saved in a file for user to check.

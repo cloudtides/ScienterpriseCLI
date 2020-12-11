@@ -50,5 +50,5 @@ Directory on the server only includes 2 to 3 bits of hexadecimals, like 160
 **Check Command**
 - The path of the result files can be checked by workunit.
 ```bash
-scienterprise check-workunit --workunit {workunit}
+scienterprise check-workunit --workunit ${workunit}
 ```

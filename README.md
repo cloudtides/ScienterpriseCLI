@@ -2,6 +2,12 @@
 
 Four commands are provided to manage the project on the server.
 
+## Requirements
+- Python3, pip
+### Libraries of Python
+- paramiko (to manage SSH by python)
+- docker (might be needed)
+- python-click
 
 ## Build and Run the CLI
 Clone this repo to your machine,
@@ -31,18 +37,24 @@ scienterprise run --app_name gromacs --input ${file name}
 - The workunit of this project will be returned. The statu of the project can be checked in http://47.100.27.38/ops/
 
 **Download Command**
--The result files can be downloaded from the server by
+- The result files can be downloaded from the server by
 ```bash
 scienterprise download --local_path ${directory name} --workunit ${workunit from above}
 ```
--Another way to download result files is through
+- Another way to download result files is through
 ```bash
-scienterprise download --remote_dir ${director on the server} --local_path ${directory in your machine}
+scienterprise download --remote_dir ${directory on the server} --local_path ${directory in your machine}
 ```
-Director on the server only includes 2 to 3 bits of hexadecimals, like 160
+Directory on the server only includes 2 to 3 bits of hexadecimals, like 160
 
 **Check Command**
--The path of the result files can be checked by workunit.
+- The path of the result files can be checked by workunit.
 ```bash
 scienterprise check-workunit --workunit {workunit}
 ```
+
+## Future Plan
+**Server Password**
+The password of the server is now saved in `user-server.json`. The next step is to use public key to connect and manage the projects on the server instead of using passwords.
+**Workunit Saving**
+Workunits of tasks need to be saved in a file for user to check.

@@ -34,7 +34,7 @@ scienterprise upload --target ${file name}
 ```bash
 scienterprise run --app_name gromacs --input ${file name}
 ```
-- The workunit of this project will be returned. The statu of the project can be checked in http://47.100.27.38/ops/
+- The workunit of this project will be returned. The status of the project can be checked in http://boinc.scienterprise.cn/ops/
 
 **Download Command**
 - The result files can be downloaded from the server by

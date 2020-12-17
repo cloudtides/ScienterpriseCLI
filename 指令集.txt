@@ -1,6 +1,0 @@
-scienterprise upload --target demo.tpr
-scienterprise run --app_name gromacs --input demo.tpr
-scienterprise check-workunit --workunit gromacs_440_1606899293
-scienterprise download --local_path result --workunit romacs_440_1606899293
-//scienterprise download-workunit --local_path result --workunit 
-scienterprise download --remote_dir 160 --local_path result
